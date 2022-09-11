@@ -1,0 +1,24 @@
+<canvas width="600" heigth="150"> </canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+
+ pincel.fillStyle = "lightgrey";
+ pincel.fillRect(0,0,600,150);
+
+ pincel.fillStyle = "green";
+ pincel.fillRect(0,0,200,150);
+
+ pincel.fillStyle = "red";
+ pincel.fillRect(150,0,200,150);
+
+ pincel.fillStyle = "blue";
+ pincel.beginPath();
+ pincel.moveTo(100,200);
+ pincel.lineTo(200,150);
+ pincel.lineTo(150,150);
+ pincel.fill();
+
+</script>
